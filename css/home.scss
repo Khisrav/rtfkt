@@ -1,0 +1,285 @@
+$bgPrimary: #1f2028;
+$bgSecondary: #36394e;
+$btnPrimary: #5733f5;
+$txtColor: #fff;
+$txtColorSecondary: #b2b2b2;
+$alienz: "TT Alientz Serif";
+
+@import url(/css/font/stylesheet.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+ 
+#hero {
+    background-image: url(/media/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.hero {
+    background: linear-gradient(0deg, $bgPrimary, rgba(0,0,0,.25));
+    width:100%;
+    padding-top:128px;
+    h1 {
+        font-size:4em;
+    }
+}
+.item {
+    overflow: hidden;
+    background: $bgSecondary;
+    display: inline-block;
+    border-radius: 24px;
+    &:hover > &-media {
+        box-shadow: 0 0 64px $btnPrimary;
+    }
+    &-media {
+        overflow: hidden;
+        border-radius: 24px;
+        width: 300px;
+        height: 300px;
+        box-shadow: 0 0 128px #000;
+        transition: all .5s ease 0s;
+        z-index:1;
+    }
+    &-info {
+        padding:12px;
+        margin-top: -36px;
+        text-align: left;
+        background: rgba(0,0,0,.25);
+        .btn {
+            font-size:0.75rem;
+            padding:4px 12px;
+        }
+        p {
+            font-weight: bold;
+        }
+    }
+    &-author {
+        position: relative;
+        top: -30px;
+        background: #ffffff;
+        height: 40px;
+        color: #000;
+        padding: 6px;
+        padding-right: 10px;
+        font-weight: bold;
+        border-radius: 100px;
+        display: inline-block;
+        img {
+            width: 28px;
+            border-radius: 100px;
+            margin-right: 6px;
+        }
+    }
+}
+.timer {
+    display: flex;
+    div {
+        margin-right:16px;
+    }
+    &-number {
+        font-size:26px;
+    }
+    &-text {
+        color:$txtColorSecondary;
+    }
+}
+#drops {
+    h2 {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top:32px;
+    }
+}
+.drops-item {
+    background: $bgSecondary;
+    margin:8px;
+    border-radius: 24px;
+    overflow: hidden;
+    &:hover .drop-media  {
+        box-shadow: 0 0 64px $btnPrimary;
+        img {
+            transform: scale(1.25);
+        }
+    }
+    .drop-author {
+        margin:8px;
+        margin-bottom: 0;
+        background: none;
+        color:$txtColor;
+        letter-spacing: 1px;
+        height: 40px;
+        padding: 6px;
+        padding-right: 10px;
+        font-weight: bold;
+        border-radius: 100px;
+        display: inline-block;
+        img {
+            width: 28px;
+            border-radius: 100px;
+            margin-right: 6px;
+        }
+    }
+    .drop-media {
+        margin:8px;
+        border-radius: 24px;
+        box-shadow: 0 0 256px #000;
+        transition: all .5s ease 0s;
+        overflow: hidden;
+        img {
+            width: 100%;
+            transition: all .5s ease 0s;
+        }
+    }
+    .drop-info {
+        box-shadow: none;
+        background: none;
+        padding:8px;
+        padding-bottom: 32px;
+        p {
+            font-weight: bold;
+        }
+    }
+}
+.try-item {
+    background: $bgSecondary;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 24px;
+    padding: 8px;
+    padding-bottom: 0;
+    margin: 8px;
+    img {
+        width: 100px;
+        margin-right: -50px;
+        z-index: 1;
+    }
+    video {
+        height:600px;
+        border-radius: 24px;
+    }
+    span {
+        display: inline-block;
+        transform: translate(-28px, -64px) rotate(270deg);
+        font-weight: bold;
+    }
+}
+.horizontal-scroll {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    &::-webkit-scrollbar {
+        height: 4px;
+        border-radius: 24px;
+        &-thumb {
+            background:$bgSecondary;
+        }
+    }
+}
+#join-us {
+    .container {
+        .grid-bg {
+            padding:16px 32px;
+            background-size: contain !important;
+            background-position: 0 -2px !important;
+            background-position-x: 0px !important;
+            background-position-y: -2px !important;
+            background: linear-gradient(to right,transparent,#272932 65%),url(/media/Grid2x.png);
+            border-radius: 24px;
+        }
+    }
+}
+.winners {
+    margin-bottom: 8px;
+    img {
+        border-radius: 24px;
+        width: 36px;
+        height: 36px;
+        display: inline-block;
+        margin-right: 12px;
+    }
+    .flex {
+        height: 65px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: center;
+        box-shadow: 8px 8px 32px $bgPrimary;
+        padding:3px;
+        border-radius: 20px;
+    }
+    .winner {
+        &-1 {
+            background:linear-gradient(90deg, rgb(102, 88, 53) 0%, rgb(39,41,50) 100%);
+        } &-2 {
+            background:linear-gradient(90deg, rgb(70,70,93) 0%, rgb(39,41,50) 100%);
+        } &-3 {
+            background: linear-gradient(90deg, rgb(57,42,29) 0%, rgb(40,40,52) 100%);
+        }
+    }
+    .place {
+        border-radius: 16px;
+        font-size: 26px;
+        width: 58px;
+        height: 58px;
+        margin-right: 16px;
+        text-align: center;
+        line-height: 58px;
+        &-1 {
+            background: #d2b25b;
+        } &-2 {
+            background: #a3a2aa;
+        } &-3 {
+            background: #a27c59;
+        }
+    }
+} 
+#who-we-are {
+    h2 .alienz {
+        color:$txtColor !important;
+    }
+}
+#worked-with {
+    .mailchimp {
+        width: 100%;
+        border-radius: 24px;
+    }
+    .col-4 {
+        margin: 0;
+        padding: 0;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .companies {
+        box-shadow: 0 0 64px #111;
+        border-radius: 24px;
+    }
+    .company {
+        box-shadow: 0 0 32px #161616;
+        text-align: center;
+        line-height: 83px;
+        margin-bottom: 16px;
+        border-radius: 24px;
+        img {
+            max-width: 103px;
+            max-height: 37px;
+        }
+    }
+}
+@media (min-width:750px){
+    .hero .container {
+        padding: 0;
+    } .align-item {
+        text-align: right;
+    }
+}
+@media (max-width:750px){
+    .container {
+        padding-left:12px;
+        padding-right: 12px;
+    } .hero h1 {
+        font-size:3em;
+    } .align-item {
+        text-align: center;
+        margin-top: 32px;
+    }
+}

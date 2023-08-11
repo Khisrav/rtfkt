@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'TT Alientz Grotesque';
+    src: url('TTAlientz-Grotesque.eot');
+    src: local('TT Alientz Grotesque'), local('TTAlientz-Grotesque'),
+        url('TTAlientz-Grotesque.eot?#iefix') format('embedded-opentype'),
+        url('TTAlientz-Grotesque.woff2') format('woff2'),
+        url('TTAlientz-Grotesque.woff') format('woff'),
+        url('TTAlientz-Grotesque.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Alientz Serif';
+    src: url('TTAlientz-Serif.eot');
+    src: local('TT Alientz Serif'), local('TTAlientz-Serif'),
+        url('TTAlientz-Serif.eot?#iefix') format('embedded-opentype'),
+        url('TTAlientz-Serif.woff2') format('woff2'),
+        url('TTAlientz-Serif.woff') format('woff'),
+        url('TTAlientz-Serif.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Alientz Variable';
+    src: url('TTAlientz-Variable.eot');
+    src: local('TT Alientz Variable'), local('TTAlientz-Variable'),
+        url('TTAlientz-Variable.eot?#iefix') format('embedded-opentype'),
+        url('TTAlientz-Variable.woff2') format('woff2'),
+        url('TTAlientz-Variable.woff') format('woff'),
+        url('TTAlientz-Variable.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

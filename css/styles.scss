@@ -1,0 +1,256 @@
+$bgPrimary: #1f2028;
+$bgSecondary: #36394e;
+$btnPrimary: #5733f5;
+$txtColor: #fff;
+$txtColorSecondary: #b2b2b2;
+$alienz: "TT Alientz Serif";
+@import url(/css/mobile-menu.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url(/css/font/stylesheet.css);
+body {
+    background: $bgPrimary;
+    color: $txtColor;
+    font-family: Montserrat, sans-serif;
+    font-size:14px;
+    &::-webkit-scrollbar {
+        width: 10px;
+        &-thumb {
+            border-radius: 24px;
+            background: $btnPrimary;
+        } &-track {
+            background: transparent;
+        }
+    }
+}
+@media (min-width:1200px) {
+    .container {
+        min-width: 1260px;
+        padding:0;
+    }
+}
+.secondary-bg {
+    background: $bgSecondary;
+}
+.primary-color {
+    color: $btnPrimary;
+}
+.secondary-color {
+    color: $txtColorSecondary;
+}
+.alienz {
+    font-family: $alienz;
+}
+.bold {
+    font-weight: bold;
+}
+section {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+header {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background: transparent;
+    z-index: 9;
+    .container-fluid.desktop-header {
+        display: flex;
+        height: 80px;
+        align-items: center;
+        flex-direction: row;
+        align-content: center;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        position: absolute;
+        top:0;
+        left:0;
+    }
+} 
+.btn {
+    font-weight: bold;
+    border-radius: 14px;
+    padding: 11px 24px;
+    font-size: .95em;
+    background: $btnPrimary;
+    color:$txtColor;
+    border:1px solid $btnPrimary;
+    transition: all .5s ease 0s;
+    text-transform: uppercase;
+    &:hover {
+        background: #3f19e9;
+        color:$txtColor;
+    }
+    &-outline {
+        background: transparent;
+        border:1px solid $bgSecondary;
+        &:hover, &:focus {
+            color:$bgPrimary;
+            background: $txtColor;
+        }
+    }
+    &-secondary {
+        background: $bgSecondary;
+        border:1px solid $bgSecondary;
+        &:hover, &:focus {
+            color:$txtColor;
+            background: transparent;
+        }
+    }
+    &-light {
+        background: $txtColor !important;
+        color:$bgPrimary !important;
+        border:1px solid $txtColor;
+        &:hover, &:focus {
+            background: transparent !important;
+            color:$txtColor !important;
+        }
+    }
+}
+.nav-menu {
+    list-style: none;
+    margin:0;
+    padding: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    .menu-item {
+        text-transform: uppercase;
+        font-size: .95em;
+        font-family: Montserrat, sans-serif;
+    }
+    .menu-link {
+        padding: 16px 16px;
+        color:$txtColor;
+        font-weight: bold;
+        text-decoration: none;
+        &:hover, &:focus {
+            color:rgb(215, 215, 215);
+        }
+    }
+    .btn {
+        padding: 11px 24px;
+        font-size: .95em;
+    }
+    .sub-menu {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: fixed;
+        top: 80px;
+        background: $bgPrimary;
+        overflow: hidden;
+        border-radius: 24px;
+        display: none;
+        transition: all .5s ease 0s;
+        &__item-link {
+            color:$txtColor;
+            padding: 12px 24px;
+            font-weight: bold;
+            display: block;
+            text-align: center;
+            transition: all .5s ease 0s;
+            &:hover, &:focus {
+                text-decoration: none;
+                background: $btnPrimary;
+                color:$txtColor;
+            }
+        }
+    }
+}
+footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    background: #1c1d23;
+    .container div div div a {
+        color:$txtColor;
+    }
+}
+@media (min-width:750px){
+    .hero .container {
+        padding: 0;
+    } .align-item {
+        text-align: right;
+    } .desktop-header {
+        display: flex;
+    } .mobile-header {
+        display: none;
+    }
+    .nav-menu {
+        list-style: none;
+        margin:0;
+        padding: 0;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        .menu-item {
+            text-transform: uppercase;
+            font-size: .95em;
+            font-family: Montserrat, sans-serif;
+        }
+        .menu-link {
+            padding: 16px 16px;
+            color:$txtColor;
+            font-weight: bold;
+            text-decoration: none;
+            &:hover, &:focus {
+                color:rgb(215, 215, 215);
+            }
+        }
+        .btn {
+            padding: 11px 24px;
+            font-size: .95em;
+        }
+        .sub-menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            top: 80px;
+            background: $bgPrimary;
+            overflow: hidden;
+            border-radius: 24px;
+            display: none;
+            transition: all .5s ease 0s;
+            &__item-link {
+                color:$txtColor;
+                padding: 12px 24px;
+                font-weight: bold;
+                display: block;
+                text-align: center;
+                transition: all .5s ease 0s;
+                &:hover, &:focus {
+                    text-decoration: none;
+                    background: $btnPrimary;
+                    color:$txtColor;
+                }
+            }
+        }
+    }
+}
+@media (max-width:750px){
+    .container {
+        padding-left:12px;
+        padding-right: 12px;
+    } .hero h1 {
+        font-size:3em;
+    } .align-item {
+        text-align: center;
+        margin-top: 32px;
+    } .desktop-header {
+        display: none !important;
+    } .mobile-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px;
+    }
+    .nav-menu {
+        list-style: none;
+        display: none;
+        .menu-item {
+            color:#fff;
+        }
+    } .brand {
+        z-index:3;
+    }
+}

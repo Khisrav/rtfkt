@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="10px" height="10px" viewBox="0 0 10 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path Copy</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="C_product-card/1440px/default-state" transform="translate(-280.000000, -75.000000)" fill="#FFFFFF">
+            <path d="M280,76.5629093 L280,84.3257828 C280,84.8780676 280.447715,85.3257828 281,85.3257828 C281.165489,85.3257828 281.328391,85.2847123 281.4741,85.2062539 L289.236973,81.0262451 C289.723244,80.764407 289.905183,80.157945 289.643345,79.6716742 C289.54061,79.4808815 289.378681,79.328622 289.181932,79.2378146 L281.419058,75.6549499 C280.917606,75.4235105 280.32348,75.642399 280.092041,76.1438511 C280.031403,76.2752329 280,76.4182093 280,76.5629093 Z" id="Path-Copy"></path>
+        </g>
+    </g>
+</svg>

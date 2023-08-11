@@ -1,0 +1,145 @@
+$bgPrimary: #1f2028;
+$bgSecondary: #36394e;
+$btnPrimary: #5733f5;
+$txtColor: #fff;
+$txtColorSecondary: #b2b2b2;
+$alienz: "TT Alientz Serif";
+
+@import url(/css/font/stylesheet.css);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+ 
+#hero {
+    background-image: url(/media/category/banner-bg-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.hero {
+    background: linear-gradient(0deg, $bgPrimary, rgba(0,0,0,.25));
+    width:100%;
+    min-height:600px;
+    padding-top:200px;
+    .container {
+        padding: 0;
+    }
+}
+hr {
+    border-bottom:1px solid $bgSecondary;
+}
+@media (min-width:720px){
+    .main-h1 {
+        font-size:100px;
+    }
+}
+.drops-item {
+    background: $bgSecondary;
+    margin:8px;
+    border-radius: 24px;
+    overflow: hidden;
+    &:hover .drop-media  {
+        box-shadow: 0 0 64px $btnPrimary;
+        img {
+            transform: scale(1.25);
+        }
+    }
+    .drop-author {
+        margin:8px;
+        margin-bottom: 0;
+        background: none;
+        color:$txtColor;
+        letter-spacing: 1px;
+        height: 40px;
+        padding: 6px;
+        padding-right: 10px;
+        font-weight: bold;
+        border-radius: 100px;
+        display: inline-block;
+        img {
+            width: 28px;
+            border-radius: 100px;
+            margin-right: 6px;
+        }
+    }
+    .drop-media {
+        margin:8px;
+        border-radius: 24px;
+        box-shadow: 0 0 256px #000;
+        transition: all .5s ease 0s;
+        overflow: hidden;
+        img {
+            width: 100%;
+            transition: all .5s ease 0s;
+        }
+    }
+    .drop-info {
+        box-shadow: none;
+        background: none;
+        padding:8px;
+        padding-bottom: 32px;
+        p {
+            font-weight: bold;
+        }
+    }
+}
+#archive {
+    .col-md-3 {
+        padding: 0 !important;
+    }
+}
+.filter-by {
+    &__title {
+        display: flex;
+        text-transform: uppercase;
+        font-weight: bold;
+        align-items: center;
+        justify-content: space-between;
+        border-top:1px solid $bgSecondary;
+        margin-top: 16px;
+        margin-bottom: 0;
+        .secondary-color {
+            font-weight:normal;
+        }
+        .cross {
+            font-size:32px;
+            font-weight: normal;
+        }
+    }
+    &__option {
+        height: 40px;
+        padding: 6px;
+        padding-right: 10px;
+        font-weight: bold;
+        border-radius: 100px;
+        border:1px solid $bgSecondary;
+        display: inline-block;
+        margin: 4px 2px;
+        img {
+            width: 28px;
+            border-radius: 100px;
+            margin-right: 6px;
+        }
+    }
+}
+.search {
+    border:1px solid $bgSecondary;
+    border-radius: 100px;
+    padding: 10px;
+    height: 43px;
+    width: 43px;
+    display: inline-block;
+    margin-right: 8px;
+    img {
+        width: 100%;
+    }
+}
+.view-option {
+    border:1px solid $bgSecondary;
+    border-radius: 100px;
+    padding: 10px;
+    height: 43px;
+    width: 43px;
+    display: inline-block;
+    margin-left: 8px;
+    img {
+        width: 100%;
+    }
+}

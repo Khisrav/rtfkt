@@ -1,0 +1,83 @@
+@import url(/css/font/stylesheet.css);
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@media (min-width: 720px) {
+  .main-h1 {
+    font-size: 100px;
+  }
+}
+#hero {
+  background-image: url(/media/wtf/mnlth.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.hero {
+  background: linear-gradient(0deg, #1f2028, rgba(0, 0, 0, 0.25));
+  width: 100%;
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+.hero .container {
+  padding: 0;
+}
+
+hr {
+  border-bottom: 1px solid #36394e;
+}
+
+.full-text img {
+  border-radius: 24px;
+  width: 100%;
+}
+.full-text .big-p {
+  font-size: 20px;
+}
+.full-text .small-p {
+  color: #b2b2b2;
+  font-size: 14px;
+}
+
+@media (min-width: 750px) {
+  #benoit {
+    margin-top: 128px;
+  }
+}
+#benoit, #chris {
+  text-align: center;
+}
+#benoit img, #chris img {
+  border-radius: 24px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+#benoit a, #chris a {
+  color: #fff;
+  font-weight: bold;
+}
+#benoit a:hover, #benoit a:focus, #chris a:hover, #chris a:focus {
+  color: #b2b2b2;
+}
+
+#benoit p, #chris p {
+  margin: 0;
+}
+
+.founders-social {
+  margin-top: 16px;
+  width: 24px !important;
+}
+
+#animated-text {
+  transition: transform 0.2s linear;
+}
+#animated-text.main-h1 {
+  border-left: 1px solid #36394e;
+  border-right: 1px solid #36394e;
+  display: inline-block;
+  padding: 0 32px;
+}
+
+.main-h1 {
+  font-size: 32px;
+}/*# sourceMappingURL=wtf.css.map */
